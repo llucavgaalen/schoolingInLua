@@ -25,3 +25,18 @@ local arr2 = {
 }
 
 print(arr2[2][3])--here you get the second table and select the third datapoint within mentions table.
+
+--with the idea of a table inside a table you can also go trough both with, as an excample for loop.
+
+local arr3 = {
+    {2, 3, 0},
+    {22, 30, 13},
+    {999, 9, 90},
+    {89, 87, 888}
+}
+for i = 1, #arr3 do --[[#here indicates that the variable (in this case arr3) is being counted, i = 1 meaning the first table
+     and j = 1 meaning the first of the first table(2 in this case)]]
+    for j = 1, #arr3[i] do
+        print(arr3[i][j])
+    end
+end
