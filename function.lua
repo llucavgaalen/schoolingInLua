@@ -83,10 +83,11 @@ local function sum1(...)
     local sums = 0
 
     for key, value in pairs({...}) do
-        print(key)
+        sums = sums + value
+        -- print(key)
         -- print(value)
     end
-    return...
+    return sums
 end
 
 print(sum1(3, 9, 27))
