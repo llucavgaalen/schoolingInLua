@@ -1,3 +1,5 @@
+-- to get text to suspend like this press 'Crtl + /?'
+
 require "mathRules"
 
 -- to put in comments you use "--" witouth the coute marks
