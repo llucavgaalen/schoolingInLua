@@ -2,6 +2,9 @@
 (   put here the name of the file witouth the "." and than the type file like ".lua" or ".c++")
 ]]
 require("main")
+require("customModules")
 
 -- here there is no need to first declare the variable in this file because that is already done in a different file that has been "require" called on.
 print(name)
+
+print(hh2.add(3, 5))
